@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './Button.module.css';
+import styles from './FormButton.module.css';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline';
   fullWidth?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ 
+const FormButton: React.FC<ButtonProps> = ({ 
   children, 
   variant = 'primary', 
   fullWidth = false,
@@ -23,4 +23,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export default FormButton;
